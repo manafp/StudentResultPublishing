@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model ResultViewModel
+<div class="text-center">
+    <form class="form-inline" asp-action="Result" asp-controller="Result">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input asp-for="RegisterNumber" type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Register Number">
+
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">Birth Date</div>
+            </div>
+            <input asp-for="DateofBirth" type="date" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Date">
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+</div>
