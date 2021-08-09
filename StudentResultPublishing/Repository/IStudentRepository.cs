@@ -8,6 +8,10 @@ namespace StudentResultPublishing.Repository
 {
     public interface IStudentRepository
     {
+        bool SaveAll();
         StudentDetails GetStudentResults(string RegisterNumber,DateTime dateOfBirth);
+        IEnumerable<StudentDetails> GetAllStudentResults();
+        bool AddResult(StudentResult result);
+        IEnumerable<Subjects> GetAllSubjects();
     }
 }

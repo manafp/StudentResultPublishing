@@ -13,6 +13,7 @@ namespace StudentResultPublishing.Models
         }
         public DbSet<StudentDetails> StudentDetails { get; set; }
         public DbSet<StudentResult> StudentResult { get; set; }
+        public DbSet<Subjects> Subjects { get; set; }
 
     }
 }
